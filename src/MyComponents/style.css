@@ -1,0 +1,392 @@
+/* nav bar  */
+
+.nav-bar {
+  display: flex;
+  height: 55px;
+  border: 1px solid white;
+  border-bottom-color: grey;
+  background-color: rgb(255, 255, 255);
+}
+
+.list-items {
+  display: flex;
+  padding: 0;
+}
+
+.list-items li:not(:first-child) {
+  padding-left: 40px;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.clickup-img {
+  padding-top: 0;
+  margin-top: -15px;
+  height: 55px;
+}
+
+.icons {
+  height: 20px;
+  margin-left: 0;
+}
+
+.nav-bar li:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Sidebar */
+
+aside {
+  width: 250px;
+  height: 100vh;
+  float: left;
+  /* padding-left: 10px; */
+  left: 0;
+
+  position: fixed;
+  /* background-color: lightgray; */
+  border: 1px solid;
+  border-right-color: gray;
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+  list-style: none;
+}
+
+.sidebar li:nth-child(2) {
+  position: relative;
+}
+.fa-search {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+
+.sidebar li:nth-child(2) input[type="search"] {
+  width: 247px;
+  height: 30px;
+  padding-left: 20px;
+}
+
+.Home {
+  width: 247px;
+  height: 38px;
+  padding-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.sidebar li:nth-child(3):hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Style for Box  */
+
+.container {
+  display: flex;
+  position: relative;
+  min-height: 20px;
+  padding: 20px;
+  gap: 40px;
+
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#nav-box-1 {
+  border-top-color: rgb(220, 213, 213);
+}
+
+#nav-box-2 {
+  border-top-color: blue;
+}
+
+#nav-box-3 {
+  border-top-color: violet;
+}
+
+#nav-box-4 {
+  border-top-color: rgb(78, 243, 45);
+}
+
+.open-task {
+  display: inline-block;
+  min-height: 20px;
+  width: 280px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.nav-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+head-name {
+  font-weight: 800;
+}
+
+.date {
+  color: red;
+  margin: -20px 0px;
+}
+
+.tasks {
+  display: flex;
+  gap: 5px;
+
+  padding-top: 30px;
+  color: grey;
+  font-size: 12px;
+}
+
+.newTask {
+  display: flex;
+  padding-left: 5px;
+  padding-top: 15px;
+  width: fit-content;
+  color: grey;
+  cursor: pointer;
+}
+
+#sub-task {
+  padding: 3px;
+}
+
+#new-task {
+  padding: 3px;
+  font-size: 12px;
+}
+
+input[type="text"]::placeholder {
+  color: lightgray;
+  font-size: 17px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+#save-button {
+  background-color: rgb(67, 155, 238);
+  color: white;
+  border: none;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 68px;
+  left: 235px;
+}
+
+.input-div {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid blue;
+  width: 300px;
+  height: 105px;
+  margin-top: 10px;
+}
+
+#input {
+  border: #fff;
+  width: 295px;
+  height: 40px;
+}
+
+.box-paragraph {
+  width: 245px;
+  height: 20px;
+  padding: 5px;
+}
+
+/* Style for Login page */
+
+.full-section {
+  width: 100%;
+  height: 878px;
+
+  background-color: rgb(145, 8, 236);
+}
+
+.header-sec {
+  position: relative;
+  background-color: rgb(248, 242, 242);
+  width: 100%;
+  height: 25vw;
+  z-index: 1;
+}
+
+.signup-link {
+  position: absolute;
+  top: 0;
+  right: 6%;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.signup-btn {
+  background-color: rgb(101, 86, 233);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6px;
+  width: 75px;
+  height: 28px;
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.Box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 325px;
+  border: 5px;
+  margin: 16vw 35vw;
+  border-radius: 15px;
+
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  margin-left: 120px;
+}
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+}
+
+.login-div a {
+  margin-left: 90px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: rgb(101, 86, 233);
+  width: 348px;
+  height: 37px;
+  margin-top: 18px;
+  border-radius: 10px;
+  color: white;
+  border-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.form-group {
+  margin-left: 50px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.link-style {
+  position: absolute;
+  top: 55%;
+  right: 55px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.form-control {
+  width: 320px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.form-group input {
+  padding-left: 24px;
+}
+
+.env-lock {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+}
+
+/* Dropdown */
+
+.dropbtn {
+  background-color: rgb(67, 155, 238);
+  color: white;
+  width: 60px;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  margin-left: 110px;
+  margin-top: -12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #2179dd;
+}
